@@ -3,9 +3,9 @@ const queries = require('./src/utils/algolia-queries')
 
 module.exports = {
   siteMetadata: {
-    title: `programmer dictionary`,
+    title: `Renato Junior`,
     position: `Full-Stack developer`,
-    description: `A blog for beginning developers.`,
+    description: `Um pouco sobre minha trajetoria como programador.`,
     author: `@RenatoJunior`,
   },
   plugins: [

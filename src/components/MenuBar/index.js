@@ -37,14 +37,6 @@ const MenuBar = ()=>{
 
     </S.MenuBarGroup>
     <S.MenuBarGroup>
-      <S.MenuBarItem tirle="Mudar o tema" onClick={()=>{
-        window.__setPreferredTheme(isDarkMode ? 'light' : 'dark')
-      }} className={theme}><Light /></S.MenuBarItem>
-      <S.MenuBarItem tirle="Mudar visualização" onClick={()=>{
-         window.__setPreferredDisplay(isListMode ? 'grid' : 'list')
-      }}>
-        {isListMode ? <Grid /> : <ListUl />}
-      </S.MenuBarItem>
       <S.MenuBarItem tirle="Ir para o topo"><Arrow /></S.MenuBarItem>
 
     </S.MenuBarGroup>

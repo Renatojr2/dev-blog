@@ -16,9 +16,6 @@ export const LayoutMain = styled.main`
   flex-direction: column;
 
 
-  border: 1px solid black;
-
-
 `;
 
 export const Container = styled.div`

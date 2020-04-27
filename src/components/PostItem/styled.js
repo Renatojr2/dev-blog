@@ -4,6 +4,12 @@ import AniLink from "gatsby-plugin-transition-link"
 
 export const Container = styled.div`
    width: 57rem;
+   margin: 1rem 0;
+   border: 1px solid var(--borders);
+
+   &:hover {
+      box-shadow: 0 0 8px rgba(0, 0, 0, .1);
+   }
    
    
 `;
@@ -31,7 +37,6 @@ export const PostItemLink = styled(AniLink)`
 
 export const PostItemWrapper = styled.section`
   align-items: center;
-  border: 1px solid var(--borders);
   display: flex;
   padding: 2rem 3rem;
   width: 100%;
