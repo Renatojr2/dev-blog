@@ -7,10 +7,11 @@ export const ProfileWrapper = styled.section`
   color: var(--texts);
   display: flex;
   flex-direction: column;
+
 `;
 
 export const ProfileLink = styled(Link)`
-  color: var(--texts);
+  color: #555;
   text-decoration: none;
   transition: color 0.5s;
   &:hover {
@@ -25,6 +26,7 @@ export const ProfileLink = styled(Link)`
 
 export const ProfileAuthor = styled.h1`
   font-size: 1.6rem;
+  margin: 0 0 0.5rem 0;
 
   ${media.lessThan('large')`
     font-size: 1.2rem;

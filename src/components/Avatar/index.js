@@ -11,7 +11,7 @@ import * as Img from './styles'
       query {
         avatarImage: file(relativePath: { eq: "my-image.png"}){
         childImageSharp {
-          fluid(maxWidth: 60) {
+          fluid(maxWidth: 80) {
             ...GatsbyImageSharpFluid_tracedSVG
           }
         }

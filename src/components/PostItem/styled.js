@@ -2,13 +2,26 @@ import styled from "styled-components"
 import media from "styled-media-query"
 import AniLink from "gatsby-plugin-transition-link"
 
+export const Container = styled.div`
+   width: 57rem;
+   
+   
+`;
+
 export const PostItemLink = styled(AniLink)`
   color: var(--texts);
   display: flex;
   text-decoration: none;
+ 
+  
+  
+  
+  
 
   body#grid & {
     background-color: var(--background);
+   
+    
   }
 
   &:hover {
@@ -18,16 +31,20 @@ export const PostItemLink = styled(AniLink)`
 
 export const PostItemWrapper = styled.section`
   align-items: center;
-  border-bottom: 1px solid var(--borders);
+  border: 1px solid var(--borders);
   display: flex;
   padding: 2rem 3rem;
   width: 100%;
+
+ 
+  
 
   body#grid & {
     border: none;
     padding: 2rem 1rem;
     flex-direction: column;
     justify-content: center;
+
   }
 
   ${media.lessThan("large")`
@@ -50,6 +67,9 @@ export const PostItemTag = styled.div`
   min-height: 90px;
   min-width: 90px;
   text-transform: uppercase;
+  
+  
+
 
   ${media.lessThan("large")`
     border-radius: 0;

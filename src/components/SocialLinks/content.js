@@ -1,27 +1,21 @@
 //um array com as informações do components que eu preciso geralmente textos e links
 
-const handle = "johndoe"
+
 
 const links = [
   {
     label: "Github",
-    url: `https://github.com/${handle}`,
+    url: `https://github.com/Renatojr2`,
   },
-  {
-    label: "Twitter",
-    url: `https://twitter.com/${handle}`,
-  },
-  {
-    label: "Youtube",
-    url: `https://www.youtube.com/${handle}`,
-  },
+ 
+
   {
     label: "Instagram",
-    url: `https://www.instagram.com/${handle}`,
+    url: `https://www.instagram.com/renatojr_1/`,
   },
   {
-    label: "Unsplash",
-    url: `https://unsplash.com/${handle}`,
+    label: "Linkedin",
+    url: `https://www.linkedin.com/in/renato-junior-385049137/`,
   },
 ]
 

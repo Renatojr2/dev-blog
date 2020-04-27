@@ -7,33 +7,34 @@ import Coments from '../components/Coments'
 
 import * as S from '../components/Post/styled'
 
-const BlogPost = ({data, pageContext}) => {
+const BlogPost = ({ data, pageContext }) => {
   const next = pageContext.nextPost
   const previous = pageContext.previousPost
-  
 
-  
+
+
 
   return (
     <Layout>
-      <SEO title={data.markdownRemark.frontmatter.title} />
-      <S.PostHeader>
-      <S.PostDate>{data.markdownRemark.frontmatter.date}  
-        {data.markdownRemark.timeToRead }  min de leitura
+      <S.Container>
+        <SEO title={data.markdownRemark.frontmatter.title} />
+        <S.PostHeader>
+          <S.PostDate>{data.markdownRemark.frontmatter.date}
+            {data.markdownRemark.timeToRead}  min de leitura
       </S.PostDate>
-      <S.PostTitle>{data.markdownRemark.frontmatter.title}</S.PostTitle>
-      <S.PostDescription>{data.markdownRemark.frontmatter.description}</S.PostDescription>
-      </S.PostHeader>
+          <S.PostTitle>{data.markdownRemark.frontmatter.title}</S.PostTitle>
+          <S.PostDescription>{data.markdownRemark.frontmatter.description}</S.PostDescription>
+        </S.PostHeader>
 
-      <S.MainContent> 
-        <div dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }}></div>
-      </S.MainContent>
+        <S.MainContent>
+          <div dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }}></div>
+        </S.MainContent>
 
-      <RecomendedPost next={next} previous={ previous} />
-      <Coments url={data.markdownRemark.fields.slug} title={data.markdownRemark.frontmatter.title} />
-    
-     
+        <RecomendedPost next={next} previous={previous} />
+        <Coments url={data.markdownRemark.fields.slug} title={data.markdownRemark.frontmatter.title} />
+      </S.Container>
     </Layout>
+
   )
 }
 

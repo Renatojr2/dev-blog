@@ -239,3 +239,7 @@ export const MainContent = styled.section`
     }
   }
 `
+
+export const Container = styled.div`
+ width: 57rem;
+`

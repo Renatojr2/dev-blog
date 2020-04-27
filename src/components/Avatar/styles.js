@@ -5,8 +5,8 @@ import Img from 'gatsby-image'
 
 export const Avatar = styled(Img) `
  border-radius: 50%;
- height: 3.75rem;
- width: 3.75rem;
+ height: 4rem;
+ width: 4rem;
  margin: auto;
 
 ${media.lessThan('large')`
