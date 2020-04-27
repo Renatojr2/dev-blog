@@ -1,29 +1,15 @@
-import React, {useEffect, useState} from 'react'
+import React from 'react'
 
 import * as S from './styled'
 
 import { Home } from "@styled-icons/boxicons-solid/Home"
 import { SearchAlt2 as Search } from "@styled-icons/boxicons-regular/SearchAlt2"
 import { UpArrowAlt as Arrow } from "@styled-icons/boxicons-regular/UpArrowAlt"
-import { Bulb as Light } from "@styled-icons/boxicons-regular/Bulb"
-import { Grid } from "@styled-icons/boxicons-solid/Grid"
-import { ListUl } from "@styled-icons/boxicons-regular/ListUl"
+
 
 
 const MenuBar = ()=>{
-  const [theme, setTheme] = useState(null)
-  const [display, setDisplay] = useState(null)
 
-  const isDarkMode = theme === 'dark'
-  const isListMode = display === 'list'
-
-  useEffect(()=>{
-    setTheme(window.__theme)
-    setDisplay(window.__display)
-
-    window.__onThemeChange = () => setTheme(window.__theme)
-    window.__onDisplayChange = () => setDisplay(window.__display)
-  }, [])
 
   return(
   <S.MenuBarWrapper>

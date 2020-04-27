@@ -5,7 +5,7 @@ import Layout from "../components/Layout"
 import SEO from "../components/seo"
 import PostItem from "../components/PostItem"
 import Pagination from '../components/Pagination'
-import * as S from '../components/listWrapper/styled'
+
 
 
 
@@ -21,7 +21,7 @@ const BlogList = props => {
   return (
     <Layout>
       <SEO title="Home" />
-      <S.ListWrapper>
+      
       {postList.map(
         ({
           node: {
@@ -41,7 +41,7 @@ const BlogList = props => {
           />
         )
       )}
-     </S.ListWrapper>
+     
       <Pagination 
       isFirst={isFirst} 
       isLast={isLast}
