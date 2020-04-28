@@ -6,12 +6,15 @@ export const Container = styled.div`
    width: 57rem;
    margin: 1rem 0;
    border: 1px solid var(--borders);
+  
 
    &:hover {
       box-shadow: 0 0 8px rgba(0, 0, 0, .1);
    }
    
-   
+   ${media.lessThan('large')`
+    width: 95vw;
+  `}
 `;
 
 export const PostItemLink = styled(AniLink)`

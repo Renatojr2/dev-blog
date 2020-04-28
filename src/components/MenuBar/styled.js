@@ -1,5 +1,6 @@
 import styled from "styled-components"
 import { Link } from "gatsby"
+import media from 'styled-media-query'
 
 export const MenuBarWrapper = styled.aside`
   align-items: center;
@@ -13,15 +14,39 @@ export const MenuBarWrapper = styled.aside`
   position: fixed;
   right: 0;
   width: 3.75rem;
+
+  ${media.lessThan('large')`
+    display: flex;
+    flex-direction: row;
+
+    margin: 0;
+    align-items: flex-start;
+    height: auto;
+    padding: 0.5rem 1rem;
+    width: 100%;
+    border: 1px solid black;
+    
+
+    position: fixed;
+    bottom: 0;
+  `}
 `
 
 export const MenuBarGroup = styled.div`
   display: flex;
   flex-direction: column;
+
+  ${media.lessThan('large')`
+    flex-direction: row;
+  `}
 `
 
 export const MenuBarLink = styled(Link)`
   display: block;
+
+  ${media.lessThan('large')`
+    display: flex;
+  `}
 `
 
 export const MenuBarItem = styled.span`
