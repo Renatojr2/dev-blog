@@ -8,6 +8,30 @@ export const ProfileWrapper = styled.section`
   display: flex;
   flex-direction: column;
 
+
+
+    /*Button */
+  .colapse {
+    display: none;
+  }
+
+  ${media.lessThan('large')`
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 85vw;
+    
+    .colapse {
+      display: inline; 
+      width: 40px;
+      height: 40px;
+      
+    }
+  `}
+  /*Button */
+
+
+
 `;
 
 export const ProfileLink = styled(Link)`

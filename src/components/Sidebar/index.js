@@ -4,12 +4,15 @@ import SocialLinks from '../SocialLinks'
 import MenuLinks from '../MenuLink'
 import * as S from './styles'
 
+
 const Sidebar = ()=> (
  
   <S.SidebarWrapper>
     <Profile />
     <SocialLinks />
-    <MenuLinks />
+
+    <MenuLinks  />
+    
   </S.SidebarWrapper>
 
 

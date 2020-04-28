@@ -7,6 +7,9 @@ export const SocialLinksWrapper = styled.nav`
 
   ${media.lessThan('large')`
     display: none;
+    .show {
+      display: block;
+    }
   `}
 
 `
