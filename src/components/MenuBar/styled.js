@@ -24,7 +24,6 @@ export const MenuBarWrapper = styled.aside`
     height: auto;
     padding: 0.5rem 1rem;
     width: 100%;
-    border: 1px solid black;
     
 
     position: fixed;

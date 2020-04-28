@@ -242,4 +242,9 @@ export const MainContent = styled.section`
 
 export const Container = styled.div`
  width: 57rem;
+
+ ${media.lessThan("large")`
+      width: 90vw;
+    `}
+
 `
