@@ -32,7 +32,7 @@ export const Container = styled.div`
 
   ${media.lessThan('large')`
     left: 0;
-    margin: 5rem .3rem;
+    margin: 5rem .5rem;
     margin-right: 3rem;
 
   `}
