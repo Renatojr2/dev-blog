@@ -42,7 +42,7 @@ export const ProfilePosition = styled.small`
 
   ${media.lessThan('large')`
     font-size: 0.8rem;
-    margin-top: 0.2rem;
+    margin: 5px 0 0 10px;
   `}
 `
 
@@ -54,4 +54,11 @@ export const ProfileDescription = styled.p`
   ${media.lessThan('large')`
     display: none;
   `}
+`
+
+export const Content = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 `
