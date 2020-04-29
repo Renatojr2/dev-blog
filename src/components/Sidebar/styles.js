@@ -11,9 +11,9 @@ export const SidebarWrapper = styled.aside`
     box-shadow: 0 0 7px  rgba(0, 0, 0, .3);
   }
   
- position: fixed;
+  position: fixed;
   background: var(--borders);
-  height: 80vh;
+  height: 85vh;
   padding: 2rem;
   text-align: center;
   width: 20rem;

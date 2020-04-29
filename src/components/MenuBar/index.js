@@ -23,7 +23,7 @@ const MenuBar = ()=>{
 
     </S.MenuBarGroup>
     <S.MenuBarGroup>
-      <S.MenuBarItem tirle="Ir para o topo"><Arrow /></S.MenuBarItem>
+      <S.MenuBarItem onClick={()=>alert('helo')} tirle="Ir para o topo"><Arrow /></S.MenuBarItem>
 
     </S.MenuBarGroup>
   </S.MenuBarWrapper>
