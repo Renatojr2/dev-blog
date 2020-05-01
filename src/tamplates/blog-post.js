@@ -3,11 +3,13 @@ import { graphql } from "gatsby"
 import Layout from '../components/Layout'
 import SEO from '../components/seo'
 import RecomendedPost from '../components/RecomendedPost'
-import Coments from '../components/Coments'
+import Comments from '../components/Coments'
+
 
 import * as S from '../components/Post/styled'
 
 const BlogPost = ({ data, pageContext }) => {
+  const post = data.markdownRemark
   const next = pageContext.nextPost
   const previous = pageContext.previousPost
 
@@ -31,7 +33,7 @@ const BlogPost = ({ data, pageContext }) => {
         </S.MainContent>
 
         <RecomendedPost next={next} previous={previous} />
-        <Coments url={data.markdownRemark.fields.slug} title={data.markdownRemark.frontmatter.title} />
+        <Comments url={post.fields.slug} title={post.frontmatter.title} />
       </S.Container>
     </Layout>
 

@@ -7,6 +7,7 @@ module.exports = {
     position: `Full-Stack developer`,
     description: `Um pouco sobre minha trajetoria como programador.`,
     author: `@RenatoJunior`,
+    siteUrl: `https://programadormineiro.netlify.app/`,
   },
   plugins: [
     `gatsby-plugin-transition-link`,
@@ -63,6 +64,7 @@ module.exports = {
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    `gatsby-plugin-netlify-cms`,
     {
       resolve: `gatsby-plugin-algolia-search`,
       options: {
