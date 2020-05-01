@@ -1,8 +1,8 @@
 backend:
-  name: netlify
+  name: github
   repo: Renatojr2/dev-blog 
   branch: master
-  site_domain: programadormineiro.netlify.app/
+  site_domain: https://programadormineiro.netlify.app/
 
 publish_mode: editorial_workflow
 media_folder: "static/assets/img"
