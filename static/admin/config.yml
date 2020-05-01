@@ -1,5 +1,5 @@
 backend:
-  name: github
+  name: git-gateway
   repo: Renatojr2/dev-blog
   branch: master
   site_domain: https://programadormineiro.netlify.app
