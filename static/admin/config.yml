@@ -3,6 +3,7 @@ backend:
   repo: Renatojr2/dev-blog 
   branch: master
   site_domain: https://programadormineiro.netlify.app/
+  base_url: 	https://api.netlify.com
 
 publish_mode: editorial_workflow
 media_folder: "static/assets/img"
