@@ -1,6 +1,6 @@
 backend:
    name: github
-  repo: renatojr2/dev-blog
+  repo: Renatojr2/dev-blog
   branch: master
 
 publish_mode: editorial_workflow
