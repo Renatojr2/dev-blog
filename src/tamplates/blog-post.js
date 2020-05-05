@@ -21,11 +21,11 @@ const BlogPost = ({ data, pageContext }) => {
       <S.Container>
         <SEO title={data.markdownRemark.frontmatter.title} />
         <S.PostHeader>
-          <S.PostDate>{data.markdownRemark.frontmatter.date}   
-            {data.markdownRemark.timeToRead}  min de leitura
+          <S.PostDate>{data.markdownRemark.frontmatter.date} • {data.markdownRemark.timeToRead}  min de leitura
       </S.PostDate>
           <S.PostTitle>{data.markdownRemark.frontmatter.title}</S.PostTitle>
-          <S.PostDescription>{data.markdownRemark.frontmatter.description}</S.PostDescription>
+          <S.PostDescription>{data.markdownRemark.frontmatter
+          .description}</S.PostDescription>
         </S.PostHeader>
 
         <S.MainContent>
