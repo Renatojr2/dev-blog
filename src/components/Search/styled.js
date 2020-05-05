@@ -1,7 +1,7 @@
 import styled from "styled-components"
 
 export const SearchWrapper = styled.section`
-  background: var(--background);
+  /* background: var(--background); */
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -35,7 +35,7 @@ export const SearchWrapper = styled.section`
       margin-top: 2rem;
     }
     .ais-Hits-item {
-      background-color: var(--background);
+      /* background-color: var(--background); */
     }
   }
   .ais-SearchBox-input {

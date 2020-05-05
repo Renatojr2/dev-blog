@@ -25,7 +25,12 @@ export const ProfileWrapper = styled.section`
       display: inline; 
       width: 40px;
       height: 40px;
+
       
+      
+    }
+    .colapse:hover {
+      border: none;
     }
   `}
   /*Button */

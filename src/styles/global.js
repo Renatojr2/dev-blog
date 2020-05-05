@@ -84,6 +84,9 @@ export default createGlobalStyle`
     --white: #fff;
     --black: #222;
   }
+  body.show {
+    --show: block;
+  }
 
   }
 `

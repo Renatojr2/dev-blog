@@ -5,6 +5,9 @@ import * as S from './styles'
 import {Menu} from '@styled-icons/boxicons-regular/Menu';
 
 const Profile = () => {
+  const alerta = () => {
+    alert("hello!")
+  }
   const { site: {
     siteMetadata: {
       title, position, description } }
@@ -35,7 +38,7 @@ const Profile = () => {
       </S.ProfileLink>
       <S.ProfileDescription>{description}</S.ProfileDescription>
 
-      <button className='colapse' type="button">
+      <button onClick={alerta} className='colapse' type="button">
         <Menu size={25} color="#444" />
       </button>
     </S.ProfileWrapper>

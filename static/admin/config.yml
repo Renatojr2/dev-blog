@@ -24,4 +24,6 @@ collections:
           format: "YYYY-MM-DD hh:mm:ss",
         }
       - { label: "image", name: "thumbnail", widget: "image" }
+      - { label: "Category", name: "category", widget: "string" }
+      - { label: "Background", name: "background", widget: "string" }
       - { label: "Body", name: "body", widget: "markdown" }
